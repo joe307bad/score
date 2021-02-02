@@ -1,0 +1,24 @@
+{
+  "name": "score",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/joe307bad/score.git",
+  "author": "Joe Badaczewski <joe307bad@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/bs-platform",
+      "**/bs-platform/**"
+    ]
+  },
+  "devDependencies": {
+    "get-yarn-workspaces": "^1.0.2",
+    "lerna": "^3.22.1"
+  }
+}

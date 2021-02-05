@@ -2,9 +2,17 @@
   "name": "ts-monorepo",
   "description": "Template for setting up a TypeScript monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/bs-platform",
+      "**/bs-platform/**"
+    ]
+  },
   "scripts": {
     "docs": "doctoc --title '**Table of content**' README.md",
     "clean": "lerna run clean",

@@ -10,7 +10,10 @@
       "**/react-native",
       "**/react-native/**",
       "**/bs-platform",
-      "**/bs-platform/**"
+      "**/reason-promise",
+      "**/bs-fetch",
+      "**/reason-react-native",
+      "**/reason-react"
     ]
   },
   "scripts": {

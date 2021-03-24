@@ -43,9 +43,9 @@ module DebugInstructions = {
 let b = Rx.range(~start=1, ~count=200, ())
 |> Rx.Operators.filter((x, _idx) => x mod 2 == 1)
 |> Rx.Operators.map((x, _idx) => x + x)
-|> Rx.Observable.subscribe(
+/* |> Rx.Observable.subscribe(
   ~next=x=>Js.log(x)
-)
+)*/
 
 /*
  Here is StyleSheet that is using Style module to define styles for your components

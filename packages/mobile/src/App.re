@@ -33,6 +33,9 @@ module DebugInstructions = {
   external make: _ => React.element = "DebugInstructions";
 };
 
+[@bs.module("@score/foo")] 
+external insertPost: ReactNative.Event.pressEvent => unit = "foo";
+
 let b = Rx.range(~start=1, ~count=200, ())
 |> Rx.Operators.filter((x, _idx) => x mod 2 == 1)
 |> Rx.Operators.map((x, _idx) => x + x)
@@ -88,6 +91,9 @@ let app = () =>
              </View>}
         <Header />
         <View style={styles##body}>
+        <Pressable onPress={insertPost}>
+          <Text>"Insert Post"->React.string</Text>
+        </Pressable>
           <View style={styles##sectionContainer}>
             <Text style={styles##sectionTitle}>
               "Step 111"->React.string

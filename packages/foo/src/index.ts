@@ -52,14 +52,11 @@ const insertPost = () => database.action(async () => {
     }), await postsCollection.query().fetch()]
 })
 
-insertPost().then(result => console.log(result))
-
-console.log(schema)
 
 const o = interval(2000).pipe(
     take(4)
 )
 
-const foo = () => console.log('hey'); //o.subscribe(v => '');
+const foo = () => insertPost().then(result => console.log(result));
 
 export { foo };

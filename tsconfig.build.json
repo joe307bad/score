@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "es2017",
     "sourceMap": true,
     "noEmitOnError": true
   },
-
   "exclude": [
     "node_modules",
     "dist"

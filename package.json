@@ -7,9 +7,6 @@
       "packages/*"
     ],
     "nohoist": [
-      "**/@nozbe/**",
-      "**/react-native",
-      "**/react-native/**",
       "**/bs-platform",
       "**/reason-promise",
       "**/bs-fetch",
@@ -23,6 +20,9 @@
     "build": "lerna run build",
     "pub": "lerna publish",
     "test": "lerna run test"
+  },
+  "dependencies": {
+    "react-native": "0.64.0"
   },
   "devDependencies": {
     "@nighttrax/eslint-config-tsx": "~7.0.0",

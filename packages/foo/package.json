@@ -13,6 +13,9 @@
     "test": "yarn run build"
   },
   "dependencies": {
+    "react-native": "**",
+    "@nozbe/watermelondb": "0.20.0",
+    "@nozbe/with-observables": "1.0.8",
     "rxjs": "6.6.6"
   },
   "devDependencies": {

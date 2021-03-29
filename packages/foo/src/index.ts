@@ -59,4 +59,4 @@ const o = interval(2000).pipe(
 
 const foo = () => insertPost().then(result => console.log(result));
 
-export { foo };
+export { foo, postsCollection };

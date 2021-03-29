@@ -15,8 +15,8 @@
     }
   ],
   "bs-dependencies": [
-    "reason-react",
-    "reason-react-native",
+    "@rescript/react",
+    "rescript-react-native",
     "@ambientlight/bs-rx",
     "reason-promise",
     "bs-fetch"

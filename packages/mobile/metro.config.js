@@ -16,6 +16,12 @@ module.exports = {
     }),
   },
   resolver: {
-    sourceExts: ['jsx', 'js', 'ts', 'tsx']
+    sourceExts: ['jsx', 'js', 'ts', 'tsx'],
+    blacklistRE: new RegExp(
+      `^((?!${reactNativeFolder.replace(
+        '/',
+        '\\/',
+      )}).)*\\/node_modules\\/react-native\\/.*$`,
+    )
   },
 };

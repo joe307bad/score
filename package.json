@@ -22,7 +22,7 @@
     "test": "lerna run test"
   },
   "dependencies": {
-    "react-native": "0.64.0"
+    "react-native": "*"
   },
   "devDependencies": {
     "@nighttrax/eslint-config-tsx": "~7.0.0",
